@@ -14,7 +14,7 @@ build:
   missing_dso_whitelist:
     - "*/lib_gnome.dll"         # [win]
     - "*/point_in_polygon.dll"  # [win]
-  number: 0
+  number: 1
   script:
     - export CMAKE_GENERATOR=Ninja  # [unix]
     - cd py_gnome && {{ PYTHON }} -m pip install ./ -vv
