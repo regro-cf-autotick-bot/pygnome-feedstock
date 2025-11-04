@@ -33,15 +33,15 @@ libcurl:
 libnetcdf:
 - 4.9.2
 libxml2:
-- '2'
+- '2.13'
 libzip:
 - '1'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
-- '2.0'
+- '2'
 openssl:
-- '3'
+- '3.5'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -53,8 +53,6 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - python
-  - numpy
 zlib:
 - '1'
 zstd:
