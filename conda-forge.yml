@@ -4,3 +4,7 @@ github:
 conda_build:
   error_overlinking: true
 conda_forge_output_validation: true
+build_platform:
+  osx_arm64: osx_64  # This specifies that osx_arm64 builds should use osx_64 as a base
+test: native_and_emulated
+
