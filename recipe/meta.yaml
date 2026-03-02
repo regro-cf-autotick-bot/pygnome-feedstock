@@ -12,8 +12,8 @@ source:
 build:
   skip: true  # [py<39 or py>313]
   missing_dso_whitelist:
-    - "*/lib_gnome.dll"         # [win]
-    - "*/point_in_polygon.dll"  # [win]
+    - "*/lib_gnome.dll"          # [win]
+    - "*/point_in_polygon.dll"   # [win]
   number: 1
   script:
     - export CMAKE_GENERATOR=Ninja  # [unix]
