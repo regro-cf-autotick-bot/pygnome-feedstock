@@ -1,5 +1,5 @@
 {% set name = "pygnome" %}
-{% set version = "1.1.22" %}
+{% set version = "1.1.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/PyGnome/archive/v{{ version }}.tar.gz
-  sha256: 539178d61fa47f8e9d211c81f645a02cca4d300576d1603519746b9c9bd31644
+  sha256: 6c5f2bd96d4c84e014b5e8db33940d9d885aa5b64d35496d3bf72b637f1b6541
 
 build:
   skip: true  # [py<39 or py>313]

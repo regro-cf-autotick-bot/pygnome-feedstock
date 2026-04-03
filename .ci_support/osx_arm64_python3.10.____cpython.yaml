@@ -33,7 +33,7 @@ libcurl:
 libnetcdf:
 - 4.9.3
 libxml2:
-- '2.13'
+- '2.14'
 libzip:
 - '1'
 macos_machine:
