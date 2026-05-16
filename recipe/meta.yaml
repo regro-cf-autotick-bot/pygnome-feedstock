@@ -1,5 +1,5 @@
 {% set name = "pygnome" %}
-{% set version = "1.1.23" %}
+{% set version = "1.1.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/NOAA-ORR-ERD/PyGnome/archive/v{{ version }}.tar.gz
-  sha256: 6c5f2bd96d4c84e014b5e8db33940d9d885aa5b64d35496d3bf72b637f1b6541
+  sha256: 828dedce9a61b6999ca57d65bf0e1e26289008f9d0c804c49131ae3479730ed5
 
 build:
   skip: true  # [py<39 or py>313]
   missing_dso_whitelist:
     - "*/lib_gnome.dll"          # [win]
     - "*/point_in_polygon.dll"   # [win]
-  number: 1
+  number: 0
   script:
     - export CMAKE_GENERATOR=Ninja  # [unix]
     - cd py_gnome && {{ PYTHON }} -m pip install ./ -vv
