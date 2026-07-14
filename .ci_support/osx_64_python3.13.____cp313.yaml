@@ -31,7 +31,7 @@ libaec:
 libcurl:
 - '8'
 libnetcdf:
-- 4.10.0
+- 4.10.1
 libxml2:
 - '2.14'
 libzip:
